@@ -1,21 +1,34 @@
 void main() {
-List<String> subjects = ['Calculus', 'Physics', 'Intro to Programming'];
-print('Number of subjects: ${subjects.length}');
-print('Frist of subjects : ${subjects[0]}');
-print('Last of subjects : ${subjects.last}');
+List<String> subjects = ['Thai', 'Social Studies', 'Math'];
+  
+  print('จำนวนวิชา: ${subjects.length}'); 
+  print('วิชาแรก: ${subjects.first} | วิชาสุดท้าย: ${subjects.last}');
+  
+  subjects.add('English');
+  print('วิชาทั้งหมด: $subjects\n');
 
-subjects.add('English');
-print('Updated subjects: $subjects');
+  Map<String, int> studentScores = {
+    'Thai': 45,
+    'Math': 85,
+  };
 
-print('---');
+  print('คะแนนวิชา Math: ${studentScores['Math']}');
 
-Map<String, int> studentScores = {
-   'Calculus': 85,
-   'Physics': 78, };
-print('Score for Physics: ${studentScores['Physics']}');
+  studentScores['English'] = 72;
+  studentScores['Social Studies'] = 55;
+  print('คะแนนทั้งหมด: $studentScores\n');
 
-studentScores['Intro to Programming'] = 92;
-print('Updated scores: $studentScores');
-print('All subjects in map: ${studentScores.keys}');
-print('All scores in map: ${studentScores.values}');
+  print('--- วิชาที่มีตัว a ---');
+  for (var entry in studentScores.entries) {
+    if (entry.key.toLowerCase().contains('a')) {
+      print('${entry.key}: ${entry.value}');
+    }
+  }
+
+  print('--- คะแนนมากกว่า 50 ---');
+  for (var entry in studentScores.entries) {
+    if (entry.value > 50) {
+      print('${entry.key}: ${entry.value}');
+    }
+  }
 }
