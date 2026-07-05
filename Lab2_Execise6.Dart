@@ -2,17 +2,21 @@ void greet(String name) {
   print('Hello, $name!');
 }
 int multiply(int a, int b) => a * b;
+
 double calculateArea({required double width, required double height}) {
-  return width * height;
+  final areaSize = width * height;
+  return areaSize;
 }
+
 void main() {
-  greet('Chonthicha');
-  int product = multiply(7, 6);
-  print('7 * 6 = $product');
+  greet('chonthicha');
 
-  double area = calculateArea(width: 5.5, height: 10.0);
-  print('Area (5.5 x 10.0) = $area');
+  int product = multiply(9, 8);
+  print('9 * 8 = $product');
 
-  double area2 = calculateArea(height: 8.0, width: 4.0);
-  print('Area (4.0 x 8.0) = $area2');
+  double area = calculateArea(width: 12.5, height: 4.0);
+  print('Area (12.5 x 4.0) = $area');
+
+  double area2 = calculateArea(height: 15.0, width: 6.2);
+  print('Area (6.2 x 15.0) = $area2');
 }
