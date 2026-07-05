@@ -1,7 +1,7 @@
 void main() {
 List<String> subjects = ['Thai', 'Social Studies', 'Math'];
 
-  print('จำนวนวิชา: ${subjects.length}'); 
+  print('จำนวนวิชา: ${subjects.length}');
   print('วิชาแรก: ${subjects.first} | วิชาสุดท้าย: ${subjects.last}');
 
   subjects.add('English');
