@@ -31,4 +31,3 @@ List<String> subjects = ['Thai', 'Social Studies', 'Math'];
       print('${entry.key}: ${entry.value}');
     }
   }
-}
