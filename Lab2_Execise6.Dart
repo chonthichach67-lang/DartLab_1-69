@@ -15,8 +15,8 @@ void main() {
   print('9 * 8 = $product');
 
   double area = calculateArea(width: 12.5, height: 4.0);
-  print('Area (12.5 x 4.0) = $area');
+  print('Area 1 (12.5 x 4.0) = $area');
 
   double area2 = calculateArea(height: 15.0, width: 6.2);
-  print('Area (6.2 x 15.0) = $area2');
+  print('Area 2 (6.2 x 15.0) = $area2');
 }
